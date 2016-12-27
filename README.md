@@ -1,1 +1,3 @@
-# react_app
+# hello_react
+
+Reactのチュートリアルやかんたんなスニペットを書き進めるリポジトリ
