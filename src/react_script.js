@@ -4,11 +4,17 @@ var HelloWorld = React.createClass({
    }
 });
 
+var Evaluator = React.createClass({
+   render: function() {
+       return React.DOM.h2(null, eval(this.props.text));
+   }
+});
+
 ReactDOM.render(
   React.createElement(
-      HelloWorld,
+      Evaluator,
       {
-          name: 'React'
+          text: '10 / 2'
       }
   ),
     document.getElementById('content')
