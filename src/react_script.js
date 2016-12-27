@@ -12,7 +12,7 @@ var Evaluator = React.createClass({
 
 var MultiElement = React.createClass({
    render: function () {
-       return (
+       return React.DOM.div(null,
          React.DOM.h2(null, 'First'),
          React.DOM.h2(null, 'Second'),
          React.DOM.h2(null, 'Third')
