@@ -10,12 +10,17 @@ var Evaluator = React.createClass({
    }
 });
 
+var MultiElement = React.createClass({
+   render: function () {
+       return (
+         React.DOM.h2(null, 'First'),
+         React.DOM.h2(null, 'Second'),
+         React.DOM.h2(null, 'Third')
+       );
+   }
+});
+
 ReactDOM.render(
-  React.createElement(
-      Evaluator,
-      {
-          text: '10 / 2'
-      }
-  ),
+  React.createElement(MultiElement),
     document.getElementById('content')
 );
