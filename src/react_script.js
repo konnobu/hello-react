@@ -55,6 +55,10 @@ var RandomColor = React.createClass({
 });
 
 ReactDOM.render(
-    <RandomColor value={Math.floor(Math.random() * 20) - 10}/>,
+    <div>
+        <p><input type="checkbox" checked/>JSX Check!</p>
+        <p><input type="checkbox" checked="{true}"/>JSX Check2!</p>
+        <p><input type="checkbox" checked="{false}"/>JSX Check3!</p>
+    </div>,
     document.getElementById('content')
 );
