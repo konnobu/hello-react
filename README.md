@@ -1,3 +1,3 @@
-# hello_react
+# hello-react
 
 Reactのチュートリアルやかんたんなスニペットを書き進めるリポジトリ
