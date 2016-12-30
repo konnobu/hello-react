@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello React</title>
-    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react@15/dist/react-with-addons.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        .fadingText-enter {
+            opacity: 0;
+            transform: translate(300px, 0);
+        }
+        .fadingText-enter.fadingText-enter-active {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition: 1000ms;
+        }
+        .fadingText-leave {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        .fadingText-leave.fadingText-leave-active {
+            opacity: 0;
+            transform: translate(-200px, 0);
+            transition: 500ms;
+        }
+        .fadingText-appear {
+            opacity: 0;
+        }
+        .fadingText-appear.fadingText-appear-active {
+            opacity: 1;
+            transition: 800ms;
+        }
+    </style>
 </head>
 <body>
 <div id="content"></div>
-<script type="text/babel" src="src/textarea_form.js"></script>
+<script type="text/babel" src="src/css_transition.js"></script>
 </body>
 </html>
