@@ -1,6 +1,6 @@
 var CheckBox = React.createClass({
     getInitialState: function () {
-        return {selection: ['first']}
+        return {selection: this.props.selection}
     },
     handleChange: function (e) {
         var selection = this.state.selection;
@@ -47,6 +47,6 @@ var CheckBox = React.createClass({
 });
 
 ReactDOM.render(
-    <CheckBox />,
+    <CheckBox selection={['first', 'third']} />,
     document.getElementById('content')
 );
