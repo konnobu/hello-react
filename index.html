@@ -9,16 +9,20 @@
     <style>
         .fadingText-enter {
             opacity: 0;
+            transform: translate(300px, 0);
         }
         .fadingText-enter.fadingText-enter-active {
             opacity: 1;
-            transition: 1500ms;
+            transform: translate(0, 0);
+            transition: 1000ms;
         }
         .fadingText-leave {
             opacity: 1;
+            transform: translate(0, 0);
         }
         .fadingText-leave.fadingText-leave-active {
             opacity: 0;
+            transform: translate(-200px, 0);
             transition: 500ms;
         }
         .fadingText-appear {
